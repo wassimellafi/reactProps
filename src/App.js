@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ProfileComponent from "./profile/profile"
+import Imageprofil from "./profile.png"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   
+    <ProfileComponent fullName="wassim" />
+    <ProfileComponent bio="xxxxxx" />
+    <ProfileComponent profession="ingénieur informatique" />
+    <ProfileComponent><img src={Imageprofil}  alt="img" /></ProfileComponent>
+    <ProfileComponent version='16' />
+   </>
   );
 }
 
